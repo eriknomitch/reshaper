@@ -1,0 +1,14 @@
+name: Task Extraction
+objective: |
+  Given a text, extract any tasks implicitly or explicitly stated within the text
+prompt:
+  description: |
+    Text may be a message, series of messages, or a chat log.
+config:
+  gpt:
+    model: "davinci"
+    temperature: 0.0
+    max_tokens: 200
+examples:
+  - input: Hey Mike, can you get that to me ASAP?
+    output: task="get that to me",urgency="urgent"
