@@ -1,0 +1,3 @@
+openai==0.22.0
+python-box[all]~=6.0
+python-dotenv==0.20.0
